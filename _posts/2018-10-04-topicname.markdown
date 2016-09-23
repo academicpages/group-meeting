@@ -2,7 +2,7 @@
 layout: post
 title: Topic TBD -- Speaker
 comments: true
-category: upcomong
+category: upcoming
 tags: meeting <+ tags +>
 ---
 
