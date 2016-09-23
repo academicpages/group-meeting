@@ -40,7 +40,4 @@ This is how you participate in your group.
 
 Links to various lists and chat services.
 
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}">Tweet</a>
-<a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
-<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 </section>
