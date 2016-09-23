@@ -1,4 +1,3 @@
-permalink: /posts/:title
 future: true
 markdown: kramdown
 kramdown:
@@ -14,11 +13,3 @@ calendar: https://yourcalendarurl
 mailinglist: https://yourmailinglisturl
 gravatar_url: 
 disqus_username:
-
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      permalink: /:date
