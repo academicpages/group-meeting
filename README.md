@@ -1,3 +1,6 @@
+## Github Pages for Group Meetings
+(Forked from [The Hacker Within, Berkeley](https://github.com/thehackerwithin/berkeley))
+
 ### Set Up
 
 We love sessions that have example code! If you have example code, please place 
