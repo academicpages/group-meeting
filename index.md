@@ -15,7 +15,7 @@ title: "About"
   {% assign upcoming = (site.posts | where: "category" , "upcoming") %}
   {% assign count = 0 %}
   {% for post in upcoming reversed %}
-  	{% count = count + 1 %}
+  	{{ count = count + 1 }}
 	{% if count < 3 %}
 		<li style="text-indent: 2em;">
 		<span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
