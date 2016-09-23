@@ -18,36 +18,43 @@
   <link rel="stylesheet" href="{{ site.url }}/css/pygments.css" type="text/css" />
   <link media="only screen and (max-device-width: 480px)" href="{{ site.url }}/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="{{ site.url }}/css/iphone.css" type="text/css" rel="stylesheet" />
-  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
   <link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png" />
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="/js/application.js"></script>
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
   <section class="sidebar">
+    {% if site.gravatar_url %}
     <a href="{{ site.github.owner_url }}/">
       <img src="{{ site.gravatar_url }}?s=150" height="75" width="75" class="avatar" />
     </a>
+    {% endif %}
 
     <section class="name">
       <a href="{{ site.url }}/">
-        <span id="fname">The</span>
-        <span id="lname">{{ site.name|split:' '|first }}</span>
-        <span id="lname">{{ site.name|split:' '|last }}</span>
-        <span id="lname">{{ site.chapter }}</span>
+        <span id="lname">{{ site.name }}</span>
       </a>
     </section>
 
     <section class="meta">
       <a href="{{ site.github.owner_url }}" target="_blank"><img src="{{ site.url }}/images/github.png"/></a>
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img src="{{ site.url }}/images/twitter.png"></a>
       <a href="{{ site.url }}/atom.xml" target="_blank"><img src="{{ site.url }}/images/rss.png" border="0"/></a>
       <br>
-      <a href="http://bit.ly/1cqFKuh"><img src="{{ site.url }}/images/calendar.png"/></a>
-      <a href="https://calmail.berkeley.edu/manage/list/listinfo/ucb-hacker-within@lists.berkeley.edu"><img src="{{ site.url }}/images/email.png"/></a>
+      {% if site.twitter %}
+      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img src="{{ site.url }}/images/twitter.png"></a>
+      {% endif %}
+
+      {% if site.calendar %}
+      <a href="{{ site.calendar }}"><img src="{{ site.url }}/images/calendar.png"/></a>
+      {% endif %}
+
+      {% if site.mailinglist %}
+      <a href="{{ site.mailinglist }}"><img src="{{ site.url }}/images/email.png"/></a>
+      {% endif %}
     </section>
 
     <section class="sections">

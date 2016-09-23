@@ -9,7 +9,9 @@ github: academicpages
 url: https://academicpages.github.io/group-meeting 
 name: Your Group Name
 description: An initial blog and site for your group meeting
-twitter: yourtwitter
+twitter: yourtwitterhandle
+calendar: https://yourcalendarurl
+mailinglist: https://yourmailinglisturl
 gravatar_url: 
 disqus_username:
 
