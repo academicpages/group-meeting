@@ -7,7 +7,9 @@ tags: meeting <+ tags +>
 ---
 
 ## Presenters
+
 ### Name1
+
 ### Name2
 
 <+ speaker bios +> 
@@ -20,6 +22,7 @@ tags: meeting <+ tags +>
   * and other things
 
 ### Topic1
+
 ### Topic2
 
 <+ notes +>
