@@ -13,10 +13,14 @@ title: "About"
 <span>Fall 2016</span><a href="{{ site.url }}/upcoming.html">Upcoming Topics</a>
 </li>
   {% assign upcoming = (site.posts | where: "category" , "upcoming") %}
+  {% assign count = 0 %}
   {% for post in upcoming reversed %}
-  <li style="text-indent: 2em;">
-  <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-  </li>
+  	{% count = count + 1 %}
+	{% if count < 3 %}
+		<li style="text-indent: 2em;">
+		<span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+		</li>
+	{% endif %}
   {% endfor %}
 <li>
 <span>2015-2016</span><a href="{{ site.url }}/previous.html">Previous Topics</a>
