@@ -15,7 +15,9 @@ title: "About"
   {% assign upcoming = (site.posts | where: "category" , "upcoming") %}
   {% for post in upcoming reversed %}
   <li>
+  <p style="text-indent: 5em;">
   <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+  </p>
   </li>
   {% endfor %}
 <li>
