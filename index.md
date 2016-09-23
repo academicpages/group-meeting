@@ -16,7 +16,7 @@ title: "About"
   {% for post in upcoming reversed %}
     {% if forloop.first %}
 		<li style="text-indent: 2em;">
-		<span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+		<span>{{ post.date | date: "%B %e, %Y" }}</span> Next topic:<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
 		</li>
 	 {% endif %}
   {% endfor %}
