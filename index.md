@@ -12,8 +12,13 @@ title: "About"
 <li>
 <span>Fall 2016</span><a href="{{ site.url }}/upcoming.html">Upcoming Topics</a>
 </li>
+  {% for post in upcoming reversed %}
+  <li>
+  <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
 <li>
-<span>2013-2016</span><a href="{{ site.url }}/previous.html">Previous Topics</a>
+<span>2015-2016</span><a href="{{ site.url }}/previous.html">Previous Topics</a>
 </li>
 </ul>
 
