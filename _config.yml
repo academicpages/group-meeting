@@ -21,4 +21,4 @@ defaults:
       path: ""
       type: posts
     values:
-      permalink: date
+      permalink: /:date
